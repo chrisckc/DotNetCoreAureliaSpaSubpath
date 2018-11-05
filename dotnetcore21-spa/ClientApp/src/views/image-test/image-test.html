@@ -1,0 +1,28 @@
+<template>
+  <section class="au-animate">
+    <h2>${heading}</h2>
+    <div class="form-group">
+      <img src="~assets/images/aurelia-logo.svg" />
+      <br/><br/>
+      <label><h4>A Few Test Images</h4></label>
+      <br/>
+      These images are included to test webpack the webpack config
+      <br/><br/>
+      <label>small images, embedded in the html as base64 encoded img (processed by webpack url-loader)</label>
+      <br/>
+      <img src="~assets/images/test.png" />
+      <br/>
+      <label>larger image (bigger than 8k), copied to output dir and linked as a standard image (passed to webpack file-loader by url-loader)</label>
+      <br/>
+      <img src="~assets/images/gradient.png" />
+      <br/>
+      <label>svg file, embedded in the html as base64 encoded img (processed by webpack url-loader)</label>
+      <br/>
+      <img src="~assets/images/svg-test.svg" />
+      <br/>
+      <label>svg file (bigger than 8k), copied to output dir and linked as a standard svg file (passed to webpack file-loader by url-loader)</label>
+      <br/>
+      <img src="~assets/images/svg-us-states.svg" />
+    </div>
+  </section>
+</template>
